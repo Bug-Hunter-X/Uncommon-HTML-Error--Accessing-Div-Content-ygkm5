@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error</title>
+</head>
+<body>
+  <div id="myDiv">
+    This is some text.
+  </div>
+  <script>
+    // Incorrect attempt to access a non-existent property
+    let text = myDiv.textContent; 
+    console.log(text);
+    // Correct way to access the content
+    let correctText = document.getElementById('myDiv').textContent; 
+    console.log(correctText);
+  </script>
+</body>
+</html>
